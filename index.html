@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="css/body.css" />
+
+	<title>URL Query String Parser</title>
+	
+</head>
+
+<body>
+
+<h1>URL Query String Parser</h1>
+
+<p>
+	Type a query string in the text box below, the click on <strong>"Show test page"</strong> to open the test page with the specified query string.
+</p>
+<p>
+	A query string <em>always</em> starts with a question mark ("?"), which is already provided for you. The question mark follows several key-value entries in the form of "key=value", each entry separated by the "&" sign.<br />
+	<strong>Example: </strong><code>"test.html?a=123&b=456"</code>
+</p>
+
+<h2>Test field</h2>
+<form>
+	<p>
+		<span id="current-url"></span><input type="text" placeholder="Your query string here"/>
+		<input type="submit" onclick="window.open('test.html?' + this.previousElementSibling.value);" value="Show test page" />
+	</p>
+</form>
+
+</body>
+
+<script src="js/index.js"></script>
+
+</html>
